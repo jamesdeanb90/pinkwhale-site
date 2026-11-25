@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 240">
+      <defs>
+        <radialGradient id="pwBody" cx="38%" cy="30%" r="80%">
+          <stop offset="0%" stop-color="#ffc2e4" />
+          <stop offset="35%" stop-color="#ff6fb5" />
+          <stop offset="75%" stop-color="#ff3d9a" />
+          <stop offset="100%" stop-color="#c81f7f" />
+        </radialGradient>
+        <linearGradient id="pwBelly" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#ffffff" />
+          <stop offset="100%" stop-color="#ffe3f1" />
+        </linearGradient>
+        <linearGradient id="pwRing" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#ff4fa3" stop-opacity="0.15" />
+          <stop offset="35%" stop-color="#ff7ac2" />
+          <stop offset="65%" stop-color="#e535c8" />
+          <stop offset="100%" stop-color="#ff4fa3" stop-opacity="0.15" />
+        </linearGradient>
+        <clipPath id="pwBellyClip">
+          <path d="M50 152 C 72 186, 124 194, 160 188 C 186 182, 202 170, 208 156 C 168 170, 98 170, 50 152 Z" />
+        </clipPath>
+        <filter id="pwGlow" x="-30%" y="-30%" width="160%" height="160%">
+          <feGaussianBlur stdDeviation="4" result="b" />
+          <feMerge>
+            <feMergeNode in="b" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+      </defs>
+            <path d="M20 150 A 110 34 0 0 1 240 150" fill="none" stroke="url(#pwRing)" stroke-width="7" filter="url(#pwGlow)" opacity="0.85" />
+            <path d="M196 132 C 214 116, 226 96, 236 70 C 240 58, 238 44, 232 36 C 226 50, 218 58, 206 62 C 214 48, 214 34, 206 24 C 198 44, 196 70, 184 110 Z" fill="url(#pwBody)" />
+            <path d="M36 140 C 36 88, 80 62, 130 62 C 178 62, 206 88, 214 114 C 218 130, 214 146, 204 156 C 184 184, 152 196, 122 196 C 70 196, 36 178, 36 140 Z" fill="url(#pwBody)" />
+            <path d="M50 152 C 72 186, 124 194, 160 188 C 186 182, 202 170, 208 156 C 168 170, 98 170, 50 152 Z" fill="url(#pwBelly)" />
+      <g clip-path="url(#pwBellyClip)" stroke="#ffc7e2" stroke-width="3">
+        <path d="M50 163 C 110 178, 170 176, 226 158" fill="none" />
+        <path d="M50 173 C 110 188, 170 186, 226 168" fill="none" />
+        <path d="M50 183 C 110 198, 170 196, 226 178" fill="none" />
+      </g>
+            <path d="M150 166 C 166 172, 180 186, 182 202 C 166 200, 152 190, 142 176 Z" fill="#d42a87" />
+            <g stroke="#3a0c2c" stroke-width="4" stroke-linecap="round" fill="none">
+          <path d="M78 120 q 11 -11 22 0" />
+          <path d="M78 120 l -5 -5 M84 113 l -3 -7 M92 111 l 0 -7" stroke-width="2.6" />
+          <path d="M124 118 q 11 -11 22 0" />
+          <path d="M146 118 l 5 -5 M140 111 l 3 -7 M132 109 l 0 -7" stroke-width="2.6" />
+        </g>
+            <ellipse cx="80" cy="136" rx="11" ry="6" fill="#ff9a6a" opacity="0.7" />
+      <ellipse cx="150" cy="134" rx="11" ry="6" fill="#ff9a6a" opacity="0.7" />
+            <path d="M102 136 q 11 10 22 0" stroke="#3a0c2c" stroke-width="3.5" stroke-linecap="round" fill="none" />
+            <path d="M86 76 C 108 66, 140 66, 160 72" stroke="#fff" stroke-opacity="0.6" stroke-width="7" stroke-linecap="round" fill="none" />
+      <ellipse cx="74" cy="96" rx="7" ry="4" fill="#fff" opacity="0.45" transform="rotate(-30 74 96)" />
+            <path d="M20 150 A 110 34 0 0 0 240 150" fill="none" stroke="url(#pwRing)" stroke-width="7" filter="url(#pwGlow)" />
+    </svg>
