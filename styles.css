@@ -115,3 +115,11 @@ h2{font-size:clamp(2.2rem,9vw,4.2rem);text-transform:uppercase;display:flex;alig
 body{background-attachment:fixed}
 .note{display:inline-block;margin:10px 0 18px;padding:8px 12px;border:2px dashed var(--pink);border-radius:12px;background:var(--tile);color:var(--pale)!important;font-size:.95rem}
 .block .note{margin:14px 0 0}
+.steps-list{margin:0;padding:0;list-style:none;counter-reset:s;display:grid;gap:10px}
+.steps-list li{counter-increment:s;display:flex;gap:12px;align-items:flex-start;color:var(--cream);font-size:1.02rem;line-height:1.4}
+.steps-list li::before{content:counter(s);flex:0 0 32px;height:32px;display:grid;place-items:center;border-radius:50%;background:#c81f7f;color:var(--cream);font:800 1rem/1 var(--display);border:2px solid var(--cream)}
+.buy-chips{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.buy-chip{flex:1 1 120px;display:flex;justify-content:center;align-items:center;min-height:52px;padding:10px 16px;border-radius:12px;background:var(--tile);border:2px solid var(--pink);color:var(--cream);text-decoration:none;font:800 1.1rem var(--display);box-shadow:3px 3px 0 var(--hot)}
+.buy-chip:hover{background:var(--ink)}
+.mint{background:var(--navy);border:2px dashed var(--pink);border-radius:12px;padding:10px 12px}
+@media (min-width:760px){.involve{grid-template-columns:1fr 1fr}}
