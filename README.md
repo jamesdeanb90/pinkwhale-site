@@ -1,6 +1,6 @@
 # pinkwhale-site
 
-Single-page site for Chill Whale ($PINK) and the Pink Whale Pod community (target domain: pinkwhalepod.app).
+Single-page site for Chill Whale Token ($PINK) and the Pink Whale Pod community (target domain: pinkwhalepod.app).
 Static HTML + CSS, no JavaScript, no build step, no trackers, self-hosted fonts.
 
 - `index.html`, `styles.css` — the page
