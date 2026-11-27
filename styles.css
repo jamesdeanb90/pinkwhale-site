@@ -89,6 +89,34 @@ h2{font-size:clamp(2.2rem,9vw,4.2rem);text-transform:uppercase;display:flex;alig
 .roadmap{margin:26px 0 0;text-align:center}
 .roadmap a{display:inline-block;font:800 1.15rem var(--display);color:var(--cream);padding:12px 22px;border:2px solid var(--pink);border-radius:999px;text-decoration:none}
 
+/* hero roadmap CTA */
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center;margin-top:20px}
+.hero-actions .scroll-cue{margin-top:0}
+.hero-cta{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;border-radius:14px;background:var(--hot);color:var(--cream);text-decoration:none;font:800 1.15rem var(--display);border:3px solid var(--cream);box-shadow:4px 4px 0 var(--cream)}
+.hero-cta:hover{background:var(--deep)}
+.hero-cta:active{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--cream)}
+.chip-roadmap{background:var(--hot);border-color:var(--cream)}
+.chip-roadmap b{color:var(--cream)}
+.chip-roadmap:hover{background:var(--deep)}
+
+/* roadmap section */
+#roadmap{scroll-margin-top:16px}
+.roadmap-intro{color:var(--muted);max-width:62ch;margin:-8px 0 26px}
+.roadmap-phases{display:grid;gap:16px}
+.roadmap-phase{background:var(--card);border:var(--line);border-radius:18px;padding:20px;box-shadow:var(--pop)}
+.roadmap-phase h3{font-size:1.45rem;display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.phase-tag{display:inline-block;font:800 .75rem/1 var(--display);text-transform:uppercase;letter-spacing:.08em;padding:7px 10px;border-radius:999px;border:2px solid var(--cream);background:var(--tile);color:var(--cream)}
+.phase-tag.is-live{background:var(--hot)}
+.phase-tag.is-progress{background:var(--deep)}
+.phase-tag.is-planned{background:var(--navy);border-color:var(--pink);color:var(--pale)}
+.roadmap-phase ul{margin:14px 0 0;padding:0;list-style:none;display:grid;gap:10px}
+.roadmap-phase li{color:var(--cream);font-size:1.02rem;line-height:1.4;background:var(--tile);border-left:5px solid var(--hot);border-radius:12px;padding:10px 12px}
+.roadmap-phase code{color:var(--pale)}
+#roadmap > .nfa{margin:22px 0 0}
+@media (min-width:760px){
+  .roadmap-phases{grid-template-columns:1fr 1fr}
+}
+
 /* footer */
 .footer{max-width:1120px;margin:72px auto 0;padding:22px 18px 34px;border-top:2px solid var(--tile)}
 .split{font-size:.82rem;color:var(--dim);margin:0 0 12px}
@@ -100,7 +128,7 @@ h2{font-size:clamp(2.2rem,9vw,4.2rem);text-transform:uppercase;display:flex;alig
   .hero-panel .tag{grid-column:1/-1;justify-self:start}
   .hero-whale{grid-column:2;grid-row:2/4;width:100%;max-width:380px;margin:0 auto}
   .hero-panel h1{grid-column:1;grid-row:2}
-  .scroll-cue{grid-column:1;grid-row:3;justify-self:start}
+  .hero-panel .hero-actions{grid-column:1;grid-row:3;justify-self:start;margin-top:0}
   .timeline{grid-template-columns:repeat(6,1fr)}
   .beat{grid-column:span 2}
   .beat:nth-child(4),.beat:nth-child(5){grid-column:span 3}
